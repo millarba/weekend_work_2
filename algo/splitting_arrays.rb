@@ -1,10 +1,9 @@
 # Complete the method called split_array, which two parameters, the first being an array, and the second being an integer. The method will then create an array of other arrays, each one being the size of the indicated by the second parameter. See the driver code for examples.
 
 def split_array(array, array_size)
-  result = array
   answer = []
-  while result.length >= array_size
-    answer << result.slice!(0..(array_size-1))
+  while array.length >= array_size
+    answer << array.slice!(0..(array_size-1))
   end
   answer
 end
